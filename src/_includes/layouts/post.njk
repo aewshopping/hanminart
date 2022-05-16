@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{# This is the template for individual blog posts–it builds the front matter properties into the page #}
+
+{% set image_url = image %}
+{% set image_url_post = image_url | replace("upload/", "upload/c_fill,w_1200/q_50,f_auto/") %}
+
+<p class="post-title">{{title}}</p>
+<img class="image-post" src="{{image_url_post}}" alt="">
+
+<article class="padding-top-none">
+  <p><i>{{media}}; {{dimensions}}</i></p>
+  <hr>
+{{ content | safe }}
+</article>

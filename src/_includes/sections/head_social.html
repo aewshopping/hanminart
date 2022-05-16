@@ -1,0 +1,23 @@
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="{{ staticdata.links.canonical_stem }}{{ page.url }}" />
+    <meta
+      name="description"
+      content="The art of Han Min - paintings and drawings on silk and paper"
+    />
+    {% if env.environment=="testing" %}<meta name="robots" content="noindex, nofollow" />{% endif %}
+    <meta property="og:title" content="Han Min's art portfolio" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ staticdata.links.canonical_stem }}{{ page.url }}" />
+    <meta
+      property="og:description"
+      content="The art of Han Min - paintings and drawings on silk and paper"
+    />
+    <meta property="og:site_name" content="Han Min Art">
+    <meta
+      property="og:image"
+      content="{{ staticdata.images.social_image_default }}"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title:text" content="Han Min art" />
+    <meta name="twitter:image" content="{{ staticdata.images.social_image_default }}" />
+    <meta name="twitter:image:alt" content="Painting">

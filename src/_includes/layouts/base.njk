@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    {# This is the base template for the site–other templates extend this one #}
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="{{ staticdata.images.header_icon_flower }}">
+    <meta name="theme-color" content="#F6F1DA" />
+    
+    <title>Han Min Art</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+
+    {% include "sections/head_social.html" %}    
+  
+  </head>
+  <body class="flex-column">
+
+{% include "sections/navbar_v2.html" %} 
+
+  <main>
+
+    {{ content | safe }}
+
+  </main>
+
+{% if footer_show!="hide" %}{% include "sections/footer.html" %}{% endif %}  
+
+  </body>
+</html>
