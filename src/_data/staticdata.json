@@ -1,0 +1,11 @@
+{
+    "images": {
+      "header_icon_flower": "https://res.cloudinary.com/ds2o5ecdw/image/upload/v1652474773/samples/lotus_twemoji.png",
+      "header_icon_plant": "https://res.cloudinary.com/ds2o5ecdw/image/upload/v1652476265/samples/twemoji_plant.png",
+      "social_image_default": "https://res.cloudinary.com/ds2o5ecdw/image/upload/v1650832746/samples/flower_on_silk.jpg"
+    },
+    "links" : {
+      "canonical_stem": "https://han-min.art",
+      "myemail":"notyetworking@gmail.com"
+    }
+}

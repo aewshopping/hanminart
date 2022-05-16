@@ -1,0 +1,9 @@
+<div class="nav-flex {% if background=="dark" %}color-text-darkbg{% else %}color-text-lightbg{% endif %}">
+  <h2 class="flex-shrink nav-logo"><a href="/">Han Min | 韩 敏 {% if env.environment=="testing" %}(test){% endif %}</a></h2>
+  <div class="flex-grow"></div>  
+  <div class="flex-shrink nav-menu">
+    <a {% set link="/about/" %}{% if page.url == link %}aria-current="true"{% endif %}  href={{ link }}>about</a>
+    <a {% set link="/portfolio/" %}{% if page.url == link %}aria-current="true"{% endif %}  href={{ link }}>portfolio</a>
+    <a {% set link="/contact/" %}{% if page.url == link %}aria-current="true"{% endif %}  href={{ link }}>contact</a>
+  </div>
+</div>
