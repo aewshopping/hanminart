@@ -2,8 +2,8 @@
 layout: layouts/post.njk
 title: Big flower 1
 description: Painting of a big flower on silk
-dimensions: 50cm x 50cm
-media: Watercolour on silk
+dimensions: 35cm x 35cm
+media: Ink and watercolour on silk
 date: 2021-10-09
 tags:
   - posts
