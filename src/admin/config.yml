@@ -29,6 +29,4 @@ collections:
       - { label: "Cloudinary image link", name: "image", widget: "string"}
       - { label: "Show big image?", name: "big_image", widget: "boolean", default: true}
       - { label: "Tags", name: "tags", widget: "hidden", default: "posts" }
-
-
     sortable_fields: ['date', 'title']
