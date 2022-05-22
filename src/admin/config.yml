@@ -7,7 +7,7 @@ backend:
 
 media_folder: "" # Media files will be stored in the repo under images/uploads
 
-site_url: https://han-min.art
+site_url: https://hanminart.netlify.app
 logo_url: https://res.cloudinary.com/ds2o5ecdw/image/upload/v1652474773/han_min/lotus_twemoji.png
 search: false
 
