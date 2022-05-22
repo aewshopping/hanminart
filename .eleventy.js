@@ -21,7 +21,8 @@ module.exports = function(eleventyConfig) {
     "png",
     "svg",
     "woff",
-    "woff2"
+    "woff2",
+    "yml"
   ]);
   eleventyConfig.addPassthroughCopy("public");
 
