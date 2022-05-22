@@ -7,7 +7,7 @@ media: Watercolour on silk
 date: 2021-12-09
 tags:
   - posts
-image: https://res.cloudinary.com/ds2o5ecdw/image/upload/han_min/flower_on_silk_highres.jpg
+image: https://res.cloudinary.com/ds2o5ecdw/image/upload/v1653250800/han_min/birdandbamboo.jpg
 big_image: true
 
 
