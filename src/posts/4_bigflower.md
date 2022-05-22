@@ -7,7 +7,7 @@ media: Watercolour on silk
 date: 2022-01-09
 tags:
   - posts
-image: https://res.cloudinary.com/ds2o5ecdw/image/upload/v1652385951/samples/white_flower_silk.jpg
+image: https://res.cloudinary.com/ds2o5ecdw/image/upload/v1652385951/han_min/white_flower_silk.jpg
 big_image: false
 
 

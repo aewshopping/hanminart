@@ -4,7 +4,7 @@ permalink: /about/
 
 ---
 
-<img class="image-portrait" src="https://res.cloudinary.com/ds2o5ecdw/image/upload/v1651781997/samples/hanmin_square.jpg" alt="the artist Han Min">
+<img class="image-portrait" src="https://res.cloudinary.com/ds2o5ecdw/image/upload/v1651781997/han_min/hanmin_square.jpg" alt="the artist Han Min">
 
 I paint in traditional Chinese watercolor style, taking inspiration from the flowers, plants and trees around us. My paintings are on silk and on paper.
 
