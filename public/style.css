@@ -136,6 +136,13 @@ p {
   color: var(--color-text);
   transition: var(--color-transition);
 }
+a {
+  color:var(--color-text);
+}
+a:hover {
+  color:black;
+  background-color:var(--color-accent);
+}
 
 hr {
   border: 0;
@@ -332,10 +339,6 @@ article p {
   font-size: var(--h3-size);
   margin-inline: 10px;
   padding-inline: 10px;
-}
-a:hover {
-  color:black;
-  background-color:var(--color-accent);
 }
 
 [aria-current] {

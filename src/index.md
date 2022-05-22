@@ -5,7 +5,7 @@ footer_show: hide
 
 ---
 
-{% set image_url="https://res.cloudinary.com/ds2o5ecdw/image/upload/samples/flower_on_silk_highres.jpg" %}
+{% set image_url="https://res.cloudinary.com/ds2o5ecdw/image/upload/han_min/flower_on_silk_highres.jpg" %}
 
 {% set image_url_small_adj = image_url | replace("upload/", "upload/w_800/q_60,f_auto/e_gradient_fade:1,y_0.3,b_rgb:4A442E/") %}
 
