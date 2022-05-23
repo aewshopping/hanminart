@@ -22,11 +22,11 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date first posted", name: "date", widget: "date" }
+      - { label: "Date first posted", name: "date", widget: "date", hint: "The website will show the most recent artworks first" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Dimensions", name: "dimensions", widget: "string" }
-      - { label: "Media", name: "media", widget: "string" }
-      - { label: "Cloudinary image link", name: "image", widget: "string"}
-      - { label: "Show big image?", name: "big_image", widget: "boolean", default: true}
+      - { label: "Dimensions", name: "dimensions", widget: "string", hint: "Eg: Ink and watercolour on silk" }
+      - { label: "Media", name: "media", widget: "string", hint: "Eg: 35cm x 35cm" }
+      - { label: "Cloudinary image link", name: "image", widget: "string", hint: "Find this in your cloudinary media library"}
+      - { label: "Show big image?", name: "big_image", widget: "text", default: false, required: false, hint: "Enter true or false"}
       - { label: "Tags", name: "tags", widget: "hidden", default: "posts" }
     sortable_fields: ['date', 'title']
