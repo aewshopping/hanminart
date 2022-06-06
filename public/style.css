@@ -54,7 +54,7 @@
   --color-nav-darkbg: white;
   --color-bg: hsl(50, 60%, 91%);
   --color-accent: hsla(54, 100%, 57%, 1);
-  --color-accent-hover: hsla(54, 100%, 40%, 0.5);
+  --color-accent-hover: hsla(49, 50%, 0%, 0.4);
   --color-footer: white hsl(4, 0%, 95%);
 
 }
@@ -194,23 +194,6 @@ article p {
     transform:translate(-50%, 0)
   }
 }
-.splash_enter_link {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 15px 30px;
-  color: white;
-  font-size: var(--h3-size);
-  border-radius: 8px;
-  text-decoration: none;
-  background-color: hsla(100, 100%, 100%, 0.3);
-  transition: background-color 0.1s ease-in-out;
-}
-.splash_enter_link:hover {
-  background-color: hsla(100, 100%, 100%, 0.4);
-  color:white;
-}
 /* END OF SPLASH PAGE CSS */
 
 /* ABOUT PAGE CSS */
@@ -240,7 +223,7 @@ article p {
   max-width: calc( 100vw - 300px);
   height: 300px;
   object-fit:cover;
-  object-position: 0px 20%;
+  object-position: 0px 38%;
   z-index:0;
 
 }
@@ -251,7 +234,7 @@ article p {
   width: 100vw;
   height: 300px;
   object-fit:cover;
-  object-position: 29vw 45%;
+  object-position: 446px 86%;
   z-index:-1;
   transform: scaleX(-1);
 }
@@ -268,6 +251,15 @@ article p {
   transform: scaleX(1);
 } */
 /* END OF ABOUT PAGE CSS */
+
+.image-hero {
+  height: 300px;
+  width: 130vw;
+  object-fit: cover;
+  object-position: -450px 65%;
+  margin-top: calc(2 * var(--padding-edge) );
+}
+
 
 .btn {
   padding: 10px 30px;
@@ -305,12 +297,13 @@ article p {
   margin: 0;
   display: grid;
   grid-template-rows: 1fr auto;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   break-inside: avoid;
+  width: 100%;
 }
 .grid-portfolio-cell-large {
-  height: 750px;
-/*  max-height: 820px; */
+  width: 100%;
+/*  max-height: 80vh;*/
 }
 
 .grid-portfolio-link-text-hidden {
@@ -340,10 +333,18 @@ article p {
   visibility: visible;
   background-color: var(--color-accent-hover);
   cursor: pointer;
+  border: solid 4px black;
 }
 .grid-image-cover {
+  height: 350px;
   width: 100%;
-  height: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+}
+.grid-image-cover-large {
+  height: 750px;
+  max-height: 80vh;
+  width: 100%;
 /*  max-height: 400px; */
   object-fit: cover;
 }
@@ -418,6 +419,7 @@ article p {
 .font-small {font-size: var(--step--1);}
 .padding-top-none {padding-top:0px;margin-top:0px;}
 .fix-children {position:relative;}
+.overflowhide {overflow: hidden;}
 .text-center {text-align: center;}
 .margin-center {margin-inline: auto;}
 .flex-grow {flex-grow:1;}

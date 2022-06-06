@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Big flower 2
-description: Painting of a big flower on silk
+title: White flower
+description: Painting of a white flower on silk
 dimensions: 50cm x 50cm
 media: Watercolour on silk
 date: 2021-11-09
@@ -13,4 +13,4 @@ big_image: true
 
 ---
 
-This painting is a homage to a famous Song dynasty masterpiece. It shows a large red flower. 
+This painting is a homage to a famous Song dynasty masterpiece. It shows a large white flower. 

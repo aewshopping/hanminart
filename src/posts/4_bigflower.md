@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Big flower 4
-description: Painting of a big flower on silk
+title: White flower and butterflies
+description: Painting of a white flower and butterflies on silk
 dimensions: 50cm x 50cm
 media: Watercolour on silk
 date: 2022-01-09
