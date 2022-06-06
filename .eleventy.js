@@ -43,6 +43,8 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+  
   eleventyConfig.setBrowserSyncConfig({ ghostMode: false });
 
   /* Build the collection of posts to list in the site
