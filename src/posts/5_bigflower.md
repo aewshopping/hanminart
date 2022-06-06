@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: Big flower 5
-description: Painting of a big flower on silk
+title: Pink flower
+description: Painting of a pink flower on silk
 dimensions: 50cm x 50cm
 media: Watercolour on silk
 date: 2022-02-09
