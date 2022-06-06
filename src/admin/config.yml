@@ -7,14 +7,15 @@ backend:
 
 media_folder: "" # Media files will be stored in the repo under images/uploads
 
-site_url: https://hanminart.netlify.app
+site_url: https://han-min.art
 logo_url: https://res.cloudinary.com/ds2o5ecdw/image/upload/v1652474773/han_min/lotus_twemoji.png
 search: false
 
 collections:
   # Portfolio posts
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
-    label: "Portfolio" # Used in the UI
+    label: "Paintings" # Used in the UI
+    label_singular: "Painting"
     description: "Add new paintings to your portfolio"
     folder: "src/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection

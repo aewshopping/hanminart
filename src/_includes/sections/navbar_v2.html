@@ -3,7 +3,7 @@
   <div class="flex-grow"></div>  
   <div class="flex-shrink nav-menu">
     <a {% set link="/about/" %}{% if page.url == link %}aria-current="true"{% endif %}  href={{ link }}>about</a>
-    <a {% set link="/portfolio/" %}{% if page.url == link %}aria-current="true"{% endif %}  href={{ link }}>portfolio</a>
+    <a {% set linktest=page.url | replace(page.fileSlug,"") %}{% set link="/portfolio/" %}{% if page.url == link or linktest=="/posts//" %}aria-current="true"{% endif %}  href={{ link }}>portfolio</a>
     <a {% set link="/contact/" %}{% if page.url == link %}aria-current="true"{% endif %}  href={{ link }}>contact</a>
   </div>
 </div>
