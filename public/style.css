@@ -389,14 +389,14 @@ article p {
 .color-text-darkbg a:hover{color:var(--color-text);}
 
 [aria-current] {
-  background-color:var(--color-accent);
+//  background-color:var(--color-accent);
 }
 [aria-current]::before {
   content:"•";
   position: absolute;
   padding-left:5px;
   left: -0.5em;
-  background-color:var(--color-accent);
+//  background-color:var(--color-accent);
 }
 @media (max-width: 800px) {
   .nav-flex {
