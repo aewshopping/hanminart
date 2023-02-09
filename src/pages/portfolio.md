@@ -6,14 +6,14 @@ permalink: /portfolio/
 
 <div class="grid-portfolio">
 
-{% for post in collections.posts %}
-  
-{% set image_url = post.data.image %}
+{% for post in posts_cms %}
+
+{% set image_url = post.image_url %}
 {% set image_url_thumb = image_url | replace("upload/", "upload/c_fill,w_600,h_600/q_60,f_auto/") %}
 {% set image_url_bigthumb = image_url | replace("upload/", "upload/w_600/q_60,f_auto/") %}
-  
-<div class="grid-portfolio-cell {% if post.data.big_image == true %}grid-portfolio-cell-large{% endif %}">
-<a class="main-link" href="{{post.url}}"><img class="grid-image-cover{% if post.data.big_image == true %}-large{% endif %}" loading="lazy" src="{% if post.data.big_image == true %}{{ image_url_bigthumb }}{% else %}{{ image_url_thumb }}{% endif %}" alt="{{ post.data.title}}"><span class="grid-portfolio-link-text-hidden">{{ post.data.title}}</span></a>
+
+<div class="grid-portfolio-cell {% if post.portfolio_size == "big" %}grid-portfolio-cell-large{% endif %}">
+<a class="main-link" href="{{post.url_name}}"><img class="grid-image-cover{% if post.portfolio_size == "big" %}-large{% endif %}" loading="lazy" src="{% if post.portfolio_size == "big" %}{{ image_url_bigthumb }}{% else %}{{ image_url_thumb }}{% endif %}" alt="{{ post.artwork_title}}"><span class="grid-portfolio-link-text-hidden">{{ post.artwork_title}}</span></a>
 </div>
 
 {% endfor %}
