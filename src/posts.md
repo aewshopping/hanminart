@@ -4,7 +4,7 @@ pagination:
   data: posts_cms
   size: 1
   alias: mydata
-permalink: "portfolio/{{ mydata.url_name }}"
+permalink: "portfolio/{{ mydata.url_name }}/"
 
 ---
 
