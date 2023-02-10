@@ -14,3 +14,5 @@ It is a portfolio site powered by [Eleventy](https://www.11ty.dev/), a lightweig
 
 ___Want a basic template version of this project to build your own Eleventy app? Check out [Minimal Eleventy](https://glitch.com/edit/#!/remix/11ty)!___
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/089d1cc6-acf7-4e35-a655-c9d3df88fa11/deploy-status)](https://app.netlify.com/sites/hanminart/deploys)
+
