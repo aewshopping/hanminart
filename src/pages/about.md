@@ -15,9 +15,13 @@ permalink: /about/
 <img class="image-fullwidth-right" src="{{ myimage_crop }}" alt="painting of a bird with a flower">
 
 <img class="image-fullwidth-left" src="{{ myimage_crop }}" alt="painting of a bird with a flower">
-  
-<img class="image-portrait" src="https://res.cloudinary.com/ds2o5ecdw/image/upload/c_fill,w_600/q_50,f_auto/v1651781997/han_min/hanmin_square.jpg" alt="the artist Han Min">
-  
+
+{% set myphoto_url = "https://res.cloudinary.com/dzmf4w5qr/image/upload/v1676666848/erica_han_wall.jpg" %}
+
+{% set myphoto_transf = myphoto_url | replace("upload/", "upload/ar_1.0,c_fill,h_600,g_north/f_auto/") %}
+
+<img class="image-portrait" src="{{ myphoto_transf }}" alt="the artist Han Min">
+
 </div>
   
 I paint in traditional Chinese watercolor style, taking inspiration from the flowers, plants and trees around us. My paintings are on silk and on paper.

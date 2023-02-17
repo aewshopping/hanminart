@@ -28,7 +28,7 @@ module.exports = () => {
     base(airtableCMSTable)
       .select({
       maxRecords: 1000,
-      fields: ["artwork_title", "date_painted", "description", "media", "dimensions", "url_name", "image_url", "portfolio_size", "tags", "go_live"], // if any field names change in airtable we need to change them here and also in the sections/macro.njk file book_covers_all_api
+      fields: ["artwork_title", "date_painted", "description", "media", "dimensions", "url_name", "image_url", "image_height", "image_width", "portfolio_size", "tags", "go_live"], // if any field names change in airtable we need to change them here and also in the sections/macro.njk file book_covers_all_api
       filterByFormula: "{go_live}=1",
       sort: [{field: "date_painted", direction: "desc"}]
     })
