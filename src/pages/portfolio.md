@@ -13,7 +13,7 @@ permalink: /portfolio/
 {% set image_url_bigthumb = image_url | replace("upload/", "upload/w_600/q_60,f_auto/") %}
 
 <div class="grid-portfolio-cell {% if post.portfolio_size == "big" %}grid-portfolio-cell-large{% endif %}">
-<a class="main-link" href="{{post.url_name}}"><img class="grid-image-cover{% if post.portfolio_size == "big" %}-large{% endif %}" loading="lazy" src="{% if post.portfolio_size == "big" %}{{ image_url_bigthumb }}{% else %}{{ image_url_thumb }}{% endif %}" alt="{{ post.artwork_title}}"><span class="grid-portfolio-link-text-hidden">{{ post.artwork_title}}</span></a>
+<a href="{{post.url_name}}"><img class="grid-image-cover{% if post.portfolio_size == "big" %}-large{% endif %}" loading="lazy" src="{% if post.portfolio_size == "big" %}{{ image_url_bigthumb }}{% else %}{{ image_url_thumb }}{% endif %}" alt="{{ post.artwork_title}}" width="450" height="450" ></a>
 </div>
 
 {% endfor %}

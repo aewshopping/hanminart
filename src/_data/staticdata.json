@@ -1,11 +1,10 @@
 {
     "images": {
-      "header_icon_flower": "https://res.cloudinary.com/ds2o5ecdw/image/upload/v1652474773/han_min/lotus_twemoji.png",
-      "header_icon_plant": "https://res.cloudinary.com/ds2o5ecdw/image/upload/v1652476265/han_min/twemoji_plant.png",
-      "social_image_default": "https://res.cloudinary.com/ds2o5ecdw/image/upload/v1650832746/han_min/flower_on_silk.jpg"
+      "header_icon_flower": "https://res.cloudinary.com/dzmf4w5qr/image/upload/v1676666838/lotus_twemoji.png",
+      "social_image_default": "https://res.cloudinary.com/dzmf4w5qr/image/upload/v1675547206/art/RoyalPeony.jpg"
     },
     "links" : {
       "canonical_stem": "https://han-min.art",
-      "myemail":"ericahan2009@gmail.com"
+      "myemail":"hanminartuk@gmail.com"
     }
 }
