@@ -1,0 +1,55 @@
+/* GRID FOR PORTFOLIO - VARIABLE HEIGHT IMAGES */
+.grid-portfolio {
+  column-count: auto;
+  column-width: 300px;
+  column-fill: balance; /* not currently supported but worth a go */
+  column-gap: 10px;
+  max-width: 1220px;
+  padding: calc( var(--padding-edge) * 2) 0;
+  display: block;
+  margin-inline: auto;
+/* display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+ */
+}
+.grid-portfolio-cell {
+  position:relative;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 6px;
+  break-inside: avoid;
+  width: 100%;
+  overflow:hidden;
+}
+.grid-portfolio-cell-large {
+  width: 100%;
+  overflow:hidden;
+/*  max-height: 80vh;*/
+}
+
+.grid-image-cover {
+  height: 350px;
+  width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+  transition: scale 400ms ease-in-out;
+}
+.grid-image-cover:hover {
+  scale:1.2;
+  transition: scale 400ms ease-in-out;
+}
+.grid-image-cover-large {
+  height: 750px;
+  max-height: 80vh;
+  width: 100%;
+/*  max-height: 400px; */
+  object-fit: cover;
+  transition: scale 400ms ease-in-out;
+}
+.grid-image-cover-large:hover {
+  scale:1.2;
+  transition: scale 400ms ease-in-out;
+}
+/* END OF GRID FOR PORTFOLIO - VARIABLE HEIGHT IMAGES */

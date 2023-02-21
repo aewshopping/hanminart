@@ -1,16 +1,10 @@
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
+const fg = require('fast-glob');
+const css_glob = fg.sync('src/**/*.css');
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.setTemplateFormats([
-    // Templates:
-    "html",
-    "njk",
-    "md",
-    // Static Assets:
-    "css"
-  ]);
-  eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.setTemplateFormats(["html", "njk", "md"]);
   
   const md = new markdownIt({
   html: true,
@@ -19,7 +13,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("markdown", (content) => {
   return md.render(content);
 });
- 
+
+  // aggregates all the files in css_glob
+  // this is then used in css_styles.njk to create the main css file
+  // later I need to create multiple css files based on directory structure
+  eleventyConfig.addCollection('css_main', function(collection) {
+    return css_glob
+  });
+  
+  
   // Filters let you modify the content https://www.11ty.dev/docs/filters/
   eleventyConfig.addFilter("htmlDateString", dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");

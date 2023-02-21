@@ -1,0 +1,44 @@
+/* #### NAVBAR V2 STYLING #### */
+.nav-flex {
+  display: flex;
+  flex-direction: row;
+  margin: 20px var(--padding-edge) 20px var(--padding-edge);
+  height: 62px;
+  align-items: start;
+}
+.nav-logo {margin-top:0;}
+.nav-flex a {text-decoration: none;}
+.nav-flex a:hover {
+  text-decoration: underline;
+}
+.color-text-lightbg a {color:var(--color-text);}
+.color-text-darkbg a {color:var(--color-nav-darkbg);}
+.nav-menu a {
+  position: relative;
+  font-size: var(--h3-size);
+  margin-inline: 10px;
+  padding-inline: 10px;
+}
+/*.color-text-darkbg a:hover{color:var(--color-text);}*/
+
+[aria-current]::before {
+  content:"•";
+  position: absolute;
+  padding-left:5px;
+  left: -0.5em;
+}
+@media (max-width: 800px) {
+  .nav-flex {
+    margin-bottom: 70px;
+  }
+  .nav-menu {
+    display:flex;
+    flex-direction:column;
+    align-items: start;
+  }
+  .nav-menu a {
+    line-height:1.5;
+    margin-bottom: 10px;
+  }
+}
+/* #### END OF NAVBAR V2 STYLING #### */
