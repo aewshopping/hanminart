@@ -31,23 +31,7 @@
   /* LAYOUT VARIABLES */
   --padding-edge: 20px;
 
-  /* @link https://utopia.fyi/space/calculator?c=600,220,1.125,1500,340,1.25,6,2,&s=,,s-s 
-  to responsively scale main COVER IMAGE SIZE from 240px width min to 300px width max */
-  
-  --fluid-min-width: 600;
-  --fluid-max-width: 1700;
 
-  --fluid-screen: 100vw;
-  --fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) / (var(--fluid-max-width) - var(--fluid-min-width)));  
-    
-  --fc-s-min: (var(--f-0-min, 240)); 
-  --fc-s-max: (var(--f-0-max, 300));
-
-  /* T-shirt sizes */
-  --space-s: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-s-min)) * var(--fluid-bp));
-  /* end of responsive size scaling */
-  
-  
   /* COLOUR VARIABLES */  
   --color-text: black /* hsl(4, 0%, 23%) */;
   --color-nav: black /* hsl(4, 0%, 14%) */;
@@ -56,6 +40,7 @@
   --color-accent: hsla(54, 100%, 57%, 1);
   --color-accent-hover: hsla(49, 50%, 0%, 0.4);
   --color-footer: white hsl(4, 0%, 95%);
+  --color-img-bg: radial-gradient(18% 28% at 24% 50%, #52D0D0FF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #E7E7E759 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #46BDC4FF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #ADADADFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #CECECEFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #5B5B5BFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #838383FF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #57D6C59C 25%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #146089F5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #478162F5 24%, #073AFF00 100%),linear-gradient(125deg, #C7AB1CFF 1%, #146467FF 100%);
 
 }
 
@@ -65,6 +50,11 @@
   }
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /* TYPOGRAPHY CSS STYLING MODULE */
 
@@ -77,71 +67,56 @@ body {
 }
 
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 1em 0 0.8em 0;
   padding: 0;
   color: var(--color-heading-text);
-  transition: var(--color-transition);
 }
 
 h1 {
   font-size: var(--h1-size);
-  transition: var(--ftsize-transition);
   letter-spacing: -1px;
   line-height: 1.1;
 }
 
 h2 {
   font-size: var(--h2-size);
-  transition: var(--ftsize-transition);
   line-height: 1.15;
   letter-spacing: -1px;
 }
 
 h3 {
   font-size: var(--h3-size);
-  transition: var(--ftsize-transition);
   line-height: 1.2;
   letter-spacing: -1px;
 }
 
 h4 {
   font-size: var(--h4-size);
-  transition: var(--ftsize-transition);
   line-height: 1.3;
 }
 
 h5 {
   font-size: var(--h5-size);
-  transition: var(--ftsize-transition);
   line-height: 1.3;
 }
 
 h6 {
   font-size: var(--h6-size);
-  transition: var(--ftsize-transition);
   line-height: 1.4;
 }
 
 p {
   font-size: var(--p-size);
-  transition: var(--ftsize-transition);
   line-height: 1.4;
   color: var(--color-text);
-  transition: var(--color-transition);
 }
 a {
   color:var(--color-text);
 }
 a:hover {
   color:black;
- // background-color:var(--color-accent);
 }
 
 hr {
@@ -188,7 +163,7 @@ article p {
   z-index: -1;
   scale: 1.4;
   background-color: #4A442E;
-  background-image: linear-gradient(145deg, rgba(74,68,46,1) 0%, rgba(126,111,54,1) 42%, rgba(55,132,148,1) 81%, rgba(55,132,148,1) 100%);
+  background-image: var(--color-img-bg);
   animation: kenny 40s ease-out;
   animation-fill-mode: forwards;
 }
@@ -273,11 +248,13 @@ article p {
   display: inline-block;
 }
 .btn-dark {
+  background-color: rgba(255,255,255,0.5);
   color: black;
   border: solid 3px black;
 }
 .btn-dark:hover {
-  background-color: var(--color-accent);
+  text-decoration: underline;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
 }
 
 /* GRID FOR PORTFOLIO - VARIABLE HEIGHT IMAGES */
@@ -341,6 +318,7 @@ article p {
 .image-post {
   width: 800px;
   max-width: 100%;
+  min-height: 300px;
   max-height: 80vh;
   object-fit: contain;
   display: block;
@@ -350,6 +328,19 @@ article p {
   text-align: center;
   padding-top: calc( var(--padding-edge) * 2 );
   font-size: var(--h4-size);
+}
+.tag-label {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: var(--padding-edge);
+  text-align: center;
+  display: inline-block;
+}
+.tag-label-dark {
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+  border: solid 2px rgba(0,0,0,0.5);
+  border-radius: 24px;
 }
 /* END OF PORTFOLIO SINGLE PAGES */
 
