@@ -1,5 +1,5 @@
 const { DateTime } = require("luxon");
-
+const markdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats([
@@ -11,7 +11,15 @@ module.exports = function(eleventyConfig) {
     "css"
   ]);
   eleventyConfig.addPassthroughCopy("public");
+  
+  const md = new markdownIt({
+  html: true,
+});
 
+  eleventyConfig.addFilter("markdown", (content) => {
+  return md.render(content);
+});
+ 
   // Filters let you modify the content https://www.11ty.dev/docs/filters/
   eleventyConfig.addFilter("htmlDateString", dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
