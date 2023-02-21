@@ -20,8 +20,8 @@ permalink: "portfolio/{{ mydata.url_name }}/"
 <p><i>{% if mydata.media %}{{mydata.media}} | {% endif %}{{mydata.dimensions}}</i></p> {#<button>{{ mydata.tags }}</button>#}
 
 {%- if mydata.description -%}
-<hr>  
-<p>{{ mydata.description }}</p>
+<hr>
+<p>{{ mydata.description | markdown | safe }}</p>
 {%- endif -%}
 
 <p class="tag-label tag-label-dark">{{ mydata.tags }}</p>
