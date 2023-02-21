@@ -1,0 +1,50 @@
+:root {
+  
+  /* TYPOGRAPHY VARIABLES */
+
+  /* @link https://utopia.fyi/type/calculator?c=500,19,1.125,1140,21,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */  
+  
+  --step--2: clamp(0.8rem, 0.5rem + 0.7vw, 1.2rem); /*altered step -2*/
+  --step--1: clamp(1.06rem, 1.11rem + -0.18vw, 0.98rem);
+  --step-0: clamp(1.19rem, 1.09rem + 0.31vw, 1.31rem);
+  --step-1: clamp(1.34rem, 1.01rem + 0.7vw, 1.75rem); /*altered step 1*/
+  --step-2: clamp(1.50rem, 0.86rem + 1.5vw, 2.33rem); /*altered step 2*/
+  --step-3: clamp(1.69rem, 0.58rem + 3.55vw, 3.11rem);
+  --step-4: clamp(1.90rem, 0.15rem + 5.60vw, 4.14rem);
+  --step-5: clamp(2.14rem, -0.50rem + 8.46vw, 5.52rem);
+  --step-6: clamp(2.41rem, -1.46rem + 12.39vw, 7.36rem);
+
+
+  --h1-size: var(--step-5);
+  --h2-size: var(--step-3);
+  --h3-size: var(--step-2);
+  --h4-size: var(--step-1);
+  --h5-size: var(--step-0);
+  --h6-size: var(--step--2);
+  --p-size: var(--step-0);
+  --ul-size: var(--step-0);
+  --bq-size-large: var(--step-1);
+  --bq-size-normal: var(--step-0);
+  --bq-size-small: var(--step--1);
+  
+  
+  /* LAYOUT VARIABLES */
+  --padding-edge: 20px;
+
+
+  /* COLOUR VARIABLES */  
+  --color-text: black /* hsl(4, 0%, 23%) */;
+  --color-nav: black /* hsl(4, 0%, 14%) */;
+  --color-nav-darkbg: white;
+  --color-bg: hsl(50, 60%, 91%);
+  --color-accent: hsla(54, 100%, 57%, 1);
+  --color-accent-hover: hsla(49, 50%, 0%, 0.4);
+  --color-footer: white hsl(4, 0%, 95%);
+
+}
+
+@media (min-width: 700px) {                             
+  :root {
+    --padding-edge: 40px;
+  }
+}

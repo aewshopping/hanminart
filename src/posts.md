@@ -12,16 +12,18 @@ permalink: "portfolio/{{ mydata.url_name }}/"
 {% set image_url_post = image_url | replace("upload/", "upload/c_fill,w_1200/q_50,f_auto/") %}
 
 <p class="post-title">{{mydata.artwork_title}}</p>
-<img class="image-post" src="{{image_url_post}}" alt="{{mydata.artwork_title}}" width="{{mydata.image_width | int }}" height="{{mydata.image_height | int }}">
+
+<img class="image-post" src="{{image_url_post}}" alt="{{mydata.artwork_title}}">
 
 <article class="padding-top-none">
 
-  <p><i>{% if mydata.media %}{{mydata.media}} | {% endif %}{{mydata.dimensions}}</i></p> {#<button>{{ mydata.tags }}</button>#}
+<p><i>{% if mydata.media %}{{mydata.media}} | {% endif %}{{mydata.dimensions}}</i></p> {#<button>{{ mydata.tags }}</button>#}
 
-{% if mydata.description %}
-<hr>
-  
-{{ mydata.description }}
+{%- if mydata.description -%}
+<hr>  
+<p>{{ mydata.description }}</p>
+{%- endif -%}
 
-{% endif %}
+<p class="tag-label tag-label-dark">{{ mydata.tags }}</p>
+
 </article>
