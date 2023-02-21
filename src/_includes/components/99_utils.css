@@ -1,0 +1,8 @@
+.font-small {font-size: var(--step--1);}
+.padding-top-none {padding-top:0px;margin-top:0px;}
+.fix-children {position:relative;}
+.overflowhide {overflow: hidden;}
+.text-center {text-align: center;}
+.margin-center {margin-inline: auto;}
+.flex-grow {flex-grow:1;}
+.color-text-darkbg {color: var(--color-nav-darkbg);}

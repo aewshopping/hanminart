@@ -1,0 +1,17 @@
+.btn {
+  padding: 10px 30px;
+  text-decoration: none;
+  margin-top: var(--padding-edge);
+  margin-right: var(--padding-edge);
+  text-align: center;
+  display: inline-block;
+}
+.btn-dark {
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+  border: solid 3px black;
+}
+.btn-dark:hover {
+  text-decoration: underline;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
+}

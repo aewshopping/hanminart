@@ -1,0 +1,11 @@
+/* CONTAINER FOR TEXT */
+article {
+  padding: var(--padding-edge);
+  margin: auto;
+  max-width: 650px; /* setting a max width here allows headers to stretch further out to the right compared to p text */
+}
+
+article p {
+  max-width: 40ch; /* max p text width of 40 characters */
+}
+/* END OF CONTAINER FOR TEXT */

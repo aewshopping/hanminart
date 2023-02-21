@@ -40,6 +40,7 @@
   --color-accent: hsla(54, 100%, 57%, 1);
   --color-accent-hover: hsla(49, 50%, 0%, 0.4);
   --color-footer: white hsl(4, 0%, 95%);
+  --color-img-bg: radial-gradient(18% 28% at 24% 50%, #52D0D0FF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #E7E7E759 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #46BDC4FF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #ADADADFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #CECECEFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #5B5B5BFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #838383FF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #57D6C59C 25%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #146089F5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #478162F5 24%, #073AFF00 100%),linear-gradient(125deg, #C7AB1CFF 1%, #146467FF 100%);
 
 }
 
