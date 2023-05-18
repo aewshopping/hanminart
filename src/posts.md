@@ -8,7 +8,7 @@ permalink: "portfolio/{{ mydata.url_name }}/"
 
 ---
 
-{% set image_url = mydata.image_url %}
+{% set image_url = mydata.image_url_https %}
 {% set image_url_post = image_url | replace("upload/", "upload/c_fill,w_1200/q_50,f_auto/") %}
 
 <p class="post-title">{{mydata.artwork_title}}</p>

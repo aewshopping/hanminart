@@ -8,7 +8,7 @@ permalink: /portfolio/
 
 {% for post in posts_cms %}
 
-{% set image_url = post.image_url %}
+{% set image_url = post.image_url_https %}
 {% set image_url_thumb = image_url | replace("upload/", "upload/c_fill,w_600,h_600/q_60,f_auto/") %}
 {% set image_url_bigthumb = image_url | replace("upload/", "upload/w_600/q_60,f_auto/") %}
 
