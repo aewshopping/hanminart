@@ -24,10 +24,17 @@ permalink: /about/
 
 </div>
   
-I paint in traditional Chinese watercolor style, taking inspiration from the flowers, plants and trees around us. My paintings are on silk and on paper.
+Erica Min Han, Chinese name: 韩敏.
 
-My home is London UK: I moved here in 2009 to study interior and spatial design in Chelsea College of Art. Before that I lived for a decade in Beijing working as an interior designer.
+Chinese born, London based artist.
 
-I was born in Shanxi province and some of my earliest memories are of playing in the rice fields and by the river of my home town. I try to recreate this feel of touching nature in my art.
+Graduated from UAL, MA. 
+
+I immerse myself in ancient Chinese painting techniques and the beauty of nature. Those are the 2 basic elements in my artworks. 
+The traditional Chinese watercolor technique that I paint reached its peak in the Song dynasty, in the 10th century. The complexity, the beauty, and the relationship with nature always draw my attention. But we are living in the 21st century, so I paint my surroundings, the tulips, the daffodils, beautiful flowers in my garden, my neighbors’ gardens or just wild flowers in nature.
+
+I don’t copy exactly what I see in nature, I use them as a model, and play with the composition to make them even more beautiful, more personal and imaginative.
+
+My paintings are on silk and on Xuan paper. Just drop me an email if you would like to talk about my artworks.
 
 <a class="btn btn-dark" href="/portfolio/">portfolio</a>
