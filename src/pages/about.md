@@ -30,11 +30,18 @@ Chinese born, London based artist.
 
 Graduated from UAL, MA. 
 
-I immerse myself in ancient Chinese painting techniques and the beauty of nature. Those are the 2 basic elements in my artworks. 
-The traditional Chinese watercolor technique that I paint reached its peak in the Song dynasty, in the 10th century. The complexity, the beauty, and the relationship with nature always draw my attention. But we are living in the 21st century, so I paint my surroundings, the tulips, the daffodils, beautiful flowers in my garden, my neighbors’ gardens or just wild flowers in nature.
+Nature is my inspiration. The complexity, beauty, and the relationship with nature always draws my attention. I also immerse myself in ancient Chinese painting techniques. These are the two basic elements in my artwork.
 
-I don’t copy exactly what I see in nature, I use them as a model, and play with the composition to make them even more beautiful, more personal and imaginative.
+The traditional Chinese watercolour technique that I paint reached its peak in the Song dynasty, in the 10th century. But we are living in the 21st century, so I paint my surroundings: the tulips, the daffodils, beautiful flowers in the garden or flowers in the wild.
 
-My paintings are on silk and on Xuan paper. Just drop me an email if you would like to talk about my artworks.
+With nature as my model, I play with the composition to make the scene even more beautiful, more personal and imaginative. I make live drawings from nature, and then transfer them onto silk using ink. Then I apply the colours layer by layer.
+
+Most of my paintings are on silk, because the transparency of silk gives life to the work – if a breeze comes, as if the leaves would move.
+
+My paintings are on silk and on Xuan paper.
+
+Just drop me an email if you would like to talk about my artworks: {{ staticdata.links.myemail }}
+
+I also take commissions. Just drop me an email if you would like to talk about it.
 
 <a class="btn btn-dark" href="/portfolio/">portfolio</a>
